@@ -36,7 +36,7 @@ internal class InvoiceDocument : IDocument
 
     void ComposeHeader(IContainer cnt)
     {
-        var titleStyle = TextStyle.Default.FontSize(20).SemiBold().FontColor(Colors.Blue.Medium);
+        var titleStyle = TextStyle.Default.FontSize(20).SemiBold().FontColor(Colors.Pink.Medium);
 
         cnt.Row(row =>
         {

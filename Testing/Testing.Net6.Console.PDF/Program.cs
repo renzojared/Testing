@@ -10,7 +10,7 @@ using Testing.Net6.Console.PDF.VivirSeguros;
 QuestPDF.Settings.License = LicenseType.Community;
 
 /*
-var filePath = "C:\\Users\\rleon\\Downloads\\miprimeravanzado.pdf";
+var filePath = "/Users/renzojared/Downloads/untitled\ folder";
 
 var model = InvoiceDocumentDataSource.GetInvoiceDetails();
 var document = new InvoiceDocument(model);
@@ -18,7 +18,12 @@ document.GeneratePdf(filePath);
 
 Process.Start("explorer.exe", filePath);*/
 
-var filePath = "C:\\Users\\rleon\\Downloads\\vivir.pdf";
+var filePath = "/Users/renzojared/Downloads/test.pdf";
+
+//Byte[] byteJson = File.ReadAllBytes("/Users/renzojared/Downloads/logo.png");
+//var jsonBase64 = Convert.ToBase64String(byteJson);
+
+
 
 var document = new CertificateDocument();
 document.GeneratePdf(filePath);

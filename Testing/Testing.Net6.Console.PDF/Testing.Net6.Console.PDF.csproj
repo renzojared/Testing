@@ -11,4 +11,10 @@
     <PackageReference Include="QuestPDF" Version="2023.6.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
 </Project>
