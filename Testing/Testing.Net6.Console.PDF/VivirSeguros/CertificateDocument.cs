@@ -94,7 +94,7 @@ public class CertificateDocument : IDocument
 
             tbl.Cell().ColumnSpan(3).Height(10);
 
-tbl.Cell().ColumnSpan(3).BorderTop(1).PaddingTop(3).Element(StyleContent).Text("VEHICULO ASEGURADO");
+            tbl.Cell().ColumnSpan(3).BorderTop(1).PaddingTop(3).Element(StyleContent).Text("VEHICULO ASEGURADO");
 
             tbl.Cell().Text("Placa");
             tbl.Cell().ColumnSpan(2).Text("Nombres");

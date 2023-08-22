@@ -1,10 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using QuestPDF.Fluent;
-using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
-using System.Diagnostics;
-using Testing.Net6.Console.PDF.Documents;
-using Testing.Net6.Console.PDF.Helpers;
 using Testing.Net6.Console.PDF.VivirSeguros;
 
 QuestPDF.Settings.License = LicenseType.Community;
@@ -18,15 +14,19 @@ document.GeneratePdf(filePath);
 
 Process.Start("explorer.exe", filePath);*/
 
-var filePath = "/Users/renzojared/Downloads/test.pdf";
-
 //Byte[] byteJson = File.ReadAllBytes("/Users/renzojared/Downloads/logo.png");
 //var jsonBase64 = Convert.ToBase64String(byteJson);
 
-
-
+var filePath = "C:/Users/rleon/Downloads/Test/ejem.pdf";
 var document = new CertificateDocument();
+
 document.GeneratePdf(filePath);
+
+Byte[] pdf = document.GeneratePdf();
+var stirng = Convert.ToBase64String(pdf);
+
+Console.WriteLine(stirng);
+Console.ReadLine();
 
 //Process.Start("explorer.exe", filePath);
 
